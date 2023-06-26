@@ -1,0 +1,166 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="ar">
+<body dir="rtl">
+<h2 style="text-align: center;"><img height="100" width="1000" src="banner.jpg"></h2>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>إستمارة تسجيل</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form method="POST" name="google-sheet">
+
+ 
+<div class="wrapper">
+    <div class="title">
+      إستمارة تصحيح المعلومات
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>الاسم واللقب</label>
+          <input  required type="text" placeholder="إسم ولقب المتعلم" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>تاريخ الميلاد</label>
+          <input required type="date" max="2080-01-01" class="input">
+		  </div>  
+       <div class="inputfield">
+		  <label>مكان الميلاد</label>
+          <input required type="text" placeholder="مكان الميلاد" class="input">
+       </div>  
+       <div class="inputfield">
+	  
+          <label>رقم التسجيل</label> 
+          <input  maxlength="11"
+	minlength="11" required type="number" placeholder="رقم التسجيل" class="input">
+	</div>
+	<div class="inputfield">
+	<label>رقم الترتيب</label>
+          <input  maxlength="05"
+	minlength="05" required type="number" placeholder="رقم الترتيب" class="input">
+	
+       </div>  
+    
+	   
+        <div class="inputfield">
+          <label>القسم</label>
+          <div class="custom_select">
+            <select>
+			<option> إختر نوع المستوى</option>
+                  <option id="11">104 أولى متوسط</option>
+                  <option id="12">204 الثانية متوسط</option>
+                  <option id="13">304 الثالثة متوسط</option>
+                   <option id="14">404 الرابعة متوسط</option> 
+                  <option id="1">122 الأولى ثانوي جذع مشترك آداب</option>
+                  <option id="1">124 الأولى ثانوي جذع مشترك علوم و تكنولوجيا</option>
+                  <option id="2">212 الثانية ثانوي آداب و فلسفة</option>
+                  <option id="2">213 الثانية ثانوي آداب و لغات أجنبية - إسبانية</option>
+                  <option id="2">214 الثانية ثانوي علوم تجريبية</option>
+				   <option id="2">215 الثانية ثانوي آداب و لغات أجنبية - إيطاية</option>
+                  <option id="2">216 الثانية ثانوي رياضيات</option>
+                  <option id="2">218 الثانية ثانوي آداب و لغات أجنبية - ألمانية</option>
+                  <option id="2">237 الثانية ثانوي تسيير و إقتصاد</option>
+                  <option id="2">251 الثانية ثانوي هندسة ميكانيكية</option>
+                  <option id="2">253 الثانية ثانوي هندسة كهربائية</option>
+                  <option id="2">255 الثانية ثانوي هندسة مدنية</option>
+                  <option id="2">257 الثانية ثانوي هندسة الطرائق</option>
+                  <option id="3">312 الثالثة ثانوي آداب و فلسفة</option>
+                  <option id="3">313 الثالثة ثانوي آداب و لغات أجنبية - إسبانية</option>
+                  <option id="3">314 الثالثة ثانوي علوم تجريبية</option>
+				   <option id="3">315 الثالثة ثانوي آداب و لغات أجنبية - إيطاية</option>
+                  <option id="3">316 الثالثة ثانوي رياضيات</option>
+                  <option id="3">318 الثالثة ثانوي آداب و لغات أجنبية - ألمانية</option>
+                  <option id="3">337 الثالثة ثانوي تسيير و إقتصاد</option>
+                  <option id="3">351 الثالثة ثانوي هندسة ميكانيكية</option>
+                  <option id="3">353 الثالثة ثانوي هندسة كهربائية</option>
+                  <option id="3">355 الثالثة ثانوي هندسة مدنية</option>
+                  <option id="3">357 الثالثة ثانوي هندسة الطرائق</option>
+                </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>السنة الدراسية</label>
+          <div class="custom_select">
+            <select>
+			<option> إختر السنة الدراسية</option>
+                  <option value="2000" >2000</option>
+                <option value="2001" >2001</option>
+                <option value="2002" >2002</option>
+                <option value="2003" >2003</option>
+                <option value="2004" >2004</option>
+                <option value="2005" >2005</option>
+                <option value="2006" >2006</option>
+                <option value="2007" >2007</option>
+                <option value="2008" >2008</option>
+                <option value="2009" >2009</option>
+                <option value="2010" >2010</option>
+                <option value="2011" >2011</option>
+                <option value="2012" >2012</option>
+                <option value="2013" >2013</option>
+                <option value="2014" >2014</option>
+				<option value="2015" >2015</option>
+				<option value="2016" >2016</option>
+				<option value="2017" >2017</option>
+				<option value="2018" >2018</option>
+				<option value="2019" >2019</option>
+				<option value="2020" >2020</option>
+				<option value="2021" >2021</option>
+                <option value="2022" >2022</option>
+                <option value="2023" >2023</option>
+				<option value="2023" >2024</option>
+				<option value="2023" >2025</option>
+				<option value="2023" >2026</option>
+				<option value="2023" >2027</option>
+				<option value="2023" >2028</option>
+				<option value="2023" >2029</option>
+				<option value="2023" >2030</option>
+              </select>
+       </div> 
+            </div> 
+
+      <div class="inputfield">
+          <label>رقم الهاتف</label>
+          <input type="number" placeholder="رقم الهاتف" class="input">
+       </div> 
+	   
+      <div class="inputfield terms">
+          <label class="check">
+            <input required type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>تم التحقق من جميع المعلومات</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="تسجيل" class="btn">
+		
+		
+		<input type="reset" value="مسح" class="btn">
+	
+      </div>
+    </div>
+</div>	
+	</div>
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzZHqK5nuz5V1PmBnTUbHN84URDAn_Z_3Wy3uOGAhNEDNdNhrKlcxxBaMRoeFYvQPok/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("شكرا..! لقد تم تسجيل البيانات بنجاح..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+	
+          </script>
+
+
+</body>
+</html>
